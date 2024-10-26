@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q3</title>
+</head>
+<body>
+  <h1>Question 2</h1>
+  <h3>open console for answer</h3>
+  
+  <script>
+    
+//  question 3 
+
+let units  =  +prompt("Enter the number of units consumed : ");
+ 
+let moreUnits;
+let extra;
+let totalBill;
+let extra1;
+if (units <= 100 &&  units > 0){
+    units  = units * 1 ;
+    console.log (`Total electricity bill amount : ${units}`);
+}else if(units > 100 && units <= 300){
+    moreUnits = units - 100;
+    moreUnits  = moreUnits * 1.5;
+     totalBill = moreUnits + units
+     console.log(`Total electricity bill amount : ${totalBill}`)
+    } else if(units > 300){
+           moreUnits = 100;
+           extra = 200;
+           extra1 = 200*1.5;
+         totalBill = units - moreUnits - extra;
+         console.log(`Total electricity bill amount : ${(totalBill * 2 + extra1 + moreUnits)}`); 
+    }else{
+        console.log("enter a valid units");
+    }
+
+  </script>
+</body>
+</html>

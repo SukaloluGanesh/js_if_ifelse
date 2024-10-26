@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q2</title>
+</head>
+<body>
+  <h1>Question 2</h1>
+  <h3>open console for answer</h3>
+  <script>
+
+    // question 2 
+
+
+let weight = +prompt("Enter the weight : ");
+let destination;
+if(weight <= 0 ){
+console.log("Enter the valid value  ")
+}else{
+    destination = prompt("Enter the destination : ").toLowerCase();
+}
+
+if (weight && destination){
+    if (weight <= 1){
+        if (destination == "local"){
+            console.log(`shipping charges $5`)
+        }else if(destination == "national"){
+            console.log(`shipping charges $8`)
+        }else if (destination == "international"){
+            console.log(`shipping charges $15`)
+        }else{
+            console.log (`enter a valid destination`)
+        }
+    }
+}
+
+if (weight > 1 && weight <= 5 &&destination){
+    if (weight > 1 && weight<= 5){
+        if (destination == "local"){
+            console.log(`shipping charges $10`)
+        }else if(destination == "national"){
+            console.log(`shipping charges $15`)
+        }else if (destination == "international"){
+            console.log(`shipping charges $30`)
+        }else{
+            console.log (`enter a valid destination`)
+        }
+    }
+}
+
+if (weight > 5 && weight <= 10 && destination){
+    if (weight > 5 && weight<= 10){
+        if (destination == "local"){
+            console.log(`shipping charges $20`)
+        }else if(destination == "national"){
+            console.log(`shipping charges $25`)
+        }else if (destination == "international"){
+            console.log(`shipping charges $50`)
+        }else{
+            console.log (`enter a valid destination`)
+        }
+    }
+}
+
+if (weight > 10 && destination){
+    if (weight > 10){
+        if (destination == "local"){
+            console.log(`shipping charges $30`)
+        }else if(destination == "national"){
+            console.log(`shipping charges $35`)
+        }else if (destination == "international"){
+            console.log(`shipping charges $70`)
+        }else{
+            console.log (`enter a valid destination`)
+        }
+    }
+}
+  </script>
+</body>
+</html>

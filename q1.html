@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q1</title>
+</head>
+<body>
+  <h1>Question 1</h1>
+  <h3>open console for answer</h3>
+  <script>
+
+// question 1 
+
+let a = prompt("enter the Amount : ");
+
+if(a<=250000){
+    console.log("no tax");
+}else if (a>250000 && a<=500000){
+   let b  = (15/100)*a;
+   console.log(`15% tax amount to be paid ${b}`)
+}else if(a>500000 && a<=1000000){
+    let c = (20/100)*a+12500;
+    console.log(`20% tax amount to be paid ${c}`)
+}else if (a>1000000){
+    let d = (30/100)*a + 112500;
+    console.log(`30% tax amount to be paid ${d} `)
+}else{
+    console.log("Enter the correct details!")
+}
+
+
+  </script>
+</body>
+</html>
